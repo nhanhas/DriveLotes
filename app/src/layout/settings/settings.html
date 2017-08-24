@@ -1,0 +1,136 @@
+<!-- toolbar -->
+<toolbar view-selected="settings" on-reset-settings="resetConnection()" on-test-connection="testConnection()"></toolbar>
+
+<!-- Include the  content to show -->
+<div class="Settings">
+
+    <div class="panel settings-view">
+
+        <div class="row text-center" ng-show="step1">
+
+            <!-- Hint -->
+            <div class="col-xs-12 ">
+                <h3>Ligação Drive FX</h3>
+                <p>Preencha as suas credenciais Drive FX</p>
+                <p>e depois</p>
+                <p>"Connectar"</p>
+
+            </div>
+
+            <!-- backend Url -->
+            <div class="col-xs-12 backend-url">
+
+                <div class="input-group">
+                    <label class="input-group-addon"><i class="fa fa-cogs"></i></label>
+                    <input type="text" class="form-control" placeholder="Drive FX Url" aria-describedby="basic-addon1" ng-model="backendUrl">
+                </div>
+
+            </div>
+
+            <!-- Drive App ID -->
+            <div class="col-xs-12 app-id">
+
+                <div class="input-group">
+                    <label class="input-group-addon"><i class="fa fa-key"></i></label>
+                    <input type="text" class="form-control" placeholder="Drive FX AppID" aria-describedby="basic-addon1" ng-model="appId">
+                </div>
+
+            </div>
+
+
+            <!-- username -->
+            <div class="col-xs-12 username">
+
+                <div class="input-group">
+                    <label class="input-group-addon"><i class="fa fa-user"></i></label>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" ng-model="username">
+                </div>
+
+            </div>
+
+            <!-- password -->
+            <div class="col-xs-12 password">
+
+                <div class="input-group">
+                    <label class="input-group-addon"><i class="fa fa-lock"></i></label>
+                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" ng-model="password">
+                </div>
+
+            </div>
+
+            <!-- company -->
+            <div class="col-xs-12 company">
+
+                <div class="input-group">
+                    <label class="input-group-addon"><i class="fa fa-home"></i></label>
+                    <input type="text" class="form-control" placeholder="Company" aria-describedby="basic-addon1" ng-model="company">
+                </div>
+
+            </div>
+
+            <!-- login now! -->
+            <div class="col-xs-12 connect">
+
+                <button type="button" class="btn btn-default btn-lg" ng-click="connect()">
+                    Connectar
+                </button>
+
+            </div>
+
+
+            <br>
+            <div ng-show="errorMsg!==''">
+                <p>{{errorMsg}}</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="row text-center" ng-show="step2">
+
+            <!-- Hint -->
+            <div class="col-xs-12 ">
+                <h3>Ligação Drive FX</h3>
+                <p>Escolha o tipo de documento para Fatura</p>
+                <p>e depois</p>
+                <p>"Confirme"</p>
+
+            </div>
+
+            <!-- Document Type -->
+            <div class="col-xs-12 doc-type">
+
+                <select ng-model="docType" class="select-option">
+                    <option ng-repeat="doc in documentList" value="{{doc.ndoc}}">{{doc.nmdoc}}</option>
+                </select>
+
+            </div>
+
+            <!-- Confirm now! -->
+            <div class="col-xs-12 confirm">
+
+                <button type="button" class="btn btn-default btn-lg" ng-click="confirmDoc()">
+                    Confirme
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="row text-center" ng-show="step3">
+            <!-- Hint -->
+            <div class="col-xs-12 ">
+                <h3>Ligação Drive FX</h3>
+                <p>As suas credenciais foram gravadas!</p>
+                <p>Pode agora iniciar a sua Faturação</p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

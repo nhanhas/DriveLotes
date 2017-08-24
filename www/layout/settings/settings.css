@@ -1,0 +1,54 @@
+.Settings {
+  left: 0;
+  margin-left: 70px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow: hidden; }
+  .Settings .row {
+    margin: 0; }
+    .Settings .row > div {
+      padding: 0; }
+  .Settings .settings-view {
+    background-color: #ff5d4c;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    overflow: auto; }
+  .Settings .panel {
+    transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    -webkit-transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    color: #fff; }
+    .Settings .panel > .row {
+      margin: 15px; }
+      .Settings .panel > .row > div {
+        margin-bottom: 15px; }
+  .Settings p {
+    margin-bottom: 0; }
+  .Settings .input-group i {
+    width: 14px; }
+  .Settings .panel label, .Settings .panel input {
+    background-color: initial;
+    color: white; }
+  .Settings .panel ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white; }
+  .Settings .panel ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white; }
+  .Settings .panel :-ms-input-placeholder {
+    /* IE 10+ */
+    color: white; }
+  .Settings .panel :-moz-placeholder {
+    /* Firefox 18- */
+    color: white; }
+  .Settings .select-option {
+    width: 100%;
+    height: 40px;
+    background-color: #ff5d4c;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px; }
