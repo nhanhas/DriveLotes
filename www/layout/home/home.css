@@ -50,6 +50,6 @@
     .Home .settings-view.move-settings-panel {
       left: 0; }
   .Home .panel {
-    transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
-    -webkit-transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
     color: #fff; }

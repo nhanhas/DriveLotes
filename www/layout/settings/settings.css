@@ -19,8 +19,8 @@
     padding-top: 15px;
     overflow: auto; }
   .Settings .panel {
-    transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
-    -webkit-transition: all 0.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
     color: #fff; }
     .Settings .panel > .row {
       margin: 15px; }
