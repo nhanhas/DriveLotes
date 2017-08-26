@@ -3,20 +3,20 @@
 
     <div class="row text-center" ng-show="viewSelected==='order'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-3 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
-        <div class="col-xs-12 add-product-option" ng-click="addNewProduct()">
+        <div class="col-xs-3 add-product-option" ng-click="addNewProduct()">
             <i class="fa fa-plus"></i>
-            <p class="description">Adicionar Artigo</p>
+            <p class="description">Adicionar</p>
         </div>
 
-        <div class="col-xs-12 finish-option" ng-click="onFinishInvoince()">
+        <div class="col-xs-3 finish-option" ng-click="onFinishInvoince()">
             <i class="fa fa-check"></i>
             <p class="description">Finalizar</p>
         </div>
 
-        <div class="col-xs-12 reset-option" ng-click="onResetAll()">
+        <div class="col-xs-3 reset-option" ng-click="onResetAll()">
             <i class="fa fa-remove"></i>
             <p class="description">Reiniciar</p>
         </div>
@@ -25,11 +25,11 @@
 
     <div class="row text-center" ng-show="viewSelected==='order-reset'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-6 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
 
-        <div class="col-xs-12 reset-option" ng-click="onResetAll()">
+        <div class="col-xs-6 reset-option" ng-click="onResetAll()">
             <i class="fa fa-plus-circle"></i>
             <p class="description">Nova Fatura</p>
         </div>
@@ -38,11 +38,11 @@
 
     <div class="row text-center" ng-show="viewSelected==='order-config'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-6 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
 
-        <div class="col-xs-12 reset-option" ng-click="goConfig()">
+        <div class="col-xs-6 reset-option" ng-click="goConfig()">
             <i class="fa fa-cogs"></i>
             <p class="description">Config.</p>
         </div>
@@ -51,16 +51,12 @@
 
     <div class="row text-center" ng-show="viewSelected==='settings'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-6 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
 
-        <!--<div class="col-xs-12 test-settings-option" ng-click="testConnection()">
-            <i class="fa fa-refresh"></i>
-            <p class="description">Test Settings</p>
-        </div>-->
 
-        <div class="col-xs-12 reset-settings-option" ng-click="resetSettings()">
+        <div class="col-xs-6 reset-settings-option" ng-click="resetSettings()">
             <i class="fa fa-rotate-left"></i>
             <p class="description">Novas Config.</p>
         </div>
@@ -70,11 +66,11 @@
 
     <div class="row text-center" ng-show="viewSelected==='pending'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-6 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
 
-        <div class="col-xs-12 refresh-option" ng-click="refreshList()">
+        <div class="col-xs-6 refresh-option" ng-click="refreshList()">
             <i class="fa fa-refresh"></i>
             <p class="description">Refrescar</p>
         </div>
@@ -83,11 +79,11 @@
 
     <div class="row text-center" ng-show="viewSelected==='pending-config'">
 
-        <div class="col-xs-12 home-option" ng-click="goBack()">
+        <div class="col-xs-6 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
 
-        <div class="col-xs-12 reset-option" ng-click="goConfig()">
+        <div class="col-xs-6 reset-option" ng-click="goConfig()">
             <i class="fa fa-cogs"></i>
             <p class="description">Config.</p>
         </div>
