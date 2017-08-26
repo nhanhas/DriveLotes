@@ -19,17 +19,11 @@ app
 
             $http.post('../server/get_invoices.php', $scope.credentials)
                 .success(function(data) {
-
-
                     if(data !== " "){
-
                         if(data.result.length > 0 ){
                             $scope.invoiceList = data.result;
                         }
-
                     }
-
-
                 })
                 .error(function(data) {
                     console.log('Error: ' + data);

@@ -16,16 +16,14 @@
     height: 100%;
     position: absolute;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 0px;
     overflow: auto; }
   .Pending .panel {
     transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
     -webkit-transition: all 0.5s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
     color: #fff; }
-    .Pending .panel > .row {
-      margin: 15px; }
-      .Pending .panel > .row > div {
-        margin-bottom: 15px; }
+    .Pending .panel > .row > div {
+      margin-bottom: 15px; }
   .Pending p {
     margin-bottom: 0; }
   .Pending .input-group i {
@@ -60,22 +58,15 @@
     font-size: 1.5em;
     padding: 1rem;
     text-align: center;
-    text-transform: uppercase;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
+    text-transform: uppercase; }
   .Pending .grid-row .grid {
     width: 100%; }
     .Pending .grid-row .grid .header-th-group {
       padding: 0; }
     .Pending .grid-row .grid .header-th {
       background-color: #196090; }
-    .Pending .grid-row .grid .header-ndoc {
-      border-bottom-left-radius: 5px; }
-    .Pending .grid-row .grid .header-data {
-      border-bottom-right-radius: 5px; }
     .Pending .grid-row .grid .product-item {
       background-color: #1d6fa5;
-      border-radius: 20px;
       margin-top: 5px; }
       .Pending .grid-row .grid .product-item .product-columns {
         height: 40px;
@@ -83,4 +74,4 @@
         .Pending .grid-row .grid .product-item .product-columns:last-child {
           padding-top: 2px;
           font-size: 25px;
-          border-radius: 20px; }
+          background-color: #196090; }
