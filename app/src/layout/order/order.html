@@ -51,7 +51,6 @@
 
         </div>
 
-
         <div class="row text-center">
 
             <!-- table of products -->
@@ -89,7 +88,10 @@
                     <div class="row product-item" ng-show="productsList.length > 0" ng-repeat="product in productsList">
 
                         <div class="col-xs-5 product-columns"><span>{{product.ref}}</span></div>
-                        <div class="col-xs-5 product-columns"><span>{{product.qtt}}</span></div>
+                        <div class="col-xs-5 product-columns">
+                            <input type="number" value="{{product.qtt}}">
+                            <!--<span>{{product.qtt}}</span>-->
+                        </div>
                         <div class="col-xs-2 product-columns" ng-click="removeProduct(product.ref)"><i class="fa fa-trash"></i></div>
 
                     </div>

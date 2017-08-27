@@ -3,22 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="251cd3cf-f67e-4300-9629-9e42e1b8d874" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/order.html" afterPath="$PROJECT_DIR$/app/src/layout/order/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/order.scss" afterPath="$PROJECT_DIR$/app/src/layout/order/order.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" afterPath="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/settings/settings.html" afterPath="$PROJECT_DIR$/app/src/layout/settings/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/settings/settings.scss" afterPath="$PROJECT_DIR$/app/src/layout/settings/settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/www/layout/order/OrderController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/order.css" afterPath="$PROJECT_DIR$/www/layout/order/order.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/order.html" afterPath="$PROJECT_DIR$/www/layout/order/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/settings/SettingsController.js" afterPath="$PROJECT_DIR$/www/layout/settings/SettingsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/settings/settings.css" afterPath="$PROJECT_DIR$/www/layout/settings/settings.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/settings/settings.html" afterPath="$PROJECT_DIR$/www/layout/settings/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/www/shared/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/www/shared/toolbar/toolbar.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,85 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toolbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="103" column="62" lean-forward="false" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="62" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toolbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/settings/SettingsController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-              <folding>
-                <element signature="e#1320#2574#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/settings/settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/settings/settings.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="84" column="15" lean-forward="false" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="91" column="48" lean-forward="false" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
               </folding>
@@ -118,38 +38,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="141" column="17" lean-forward="false" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+            <state relative-caret-position="436">
+              <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding>
                 <element signature="e#713#850#0" expanded="false" />
                 <element signature="e#864#2131#0" expanded="false" />
                 <element signature="e#2155#2182#0" expanded="false" />
-                <element signature="e#2315#3308#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pending.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.scss">
+      <file leaf-file-name="OrderController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="411">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding>
-                <element signature="e#63#916#0" expanded="false" />
+                <element signature="e#2247#3110#0" expanded="false" />
+                <element signature="e#2393#3097#0" expanded="false" />
+                <element signature="e#3196#3417#0" expanded="false" />
+                <element signature="e#4902#5231#0" expanded="false" />
+                <element signature="e#10340#11655#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -168,6 +81,7 @@
       <find>doc-type</find>
       <find>selec</find>
       <find>updateFlags</find>
+      <find>produ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,14 +97,14 @@
         <option value="$PROJECT_DIR$/app/src/layout/pending/PendingController.js" />
         <option value="$PROJECT_DIR$/app/src/shared/utils/ClientUtils.js" />
         <option value="$PROJECT_DIR$/app/src/layout/pending/pending.scss" />
-        <option value="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
-        <option value="$PROJECT_DIR$/app/src/layout/order/order.html" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
         <option value="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" />
         <option value="$PROJECT_DIR$/app/src/layout/settings/settings.html" />
         <option value="$PROJECT_DIR$/app/src/layout/settings/settings.scss" />
+        <option value="$PROJECT_DIR$/app/src/layout/order/order.html" />
         <option value="$PROJECT_DIR$/app/src/layout/order/order.scss" />
+        <option value="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
       </list>
     </option>
   </component>
@@ -334,12 +248,12 @@
       <workItem from="1503755133629" duration="639000" />
       <workItem from="1503779072778" duration="1434000" />
       <workItem from="1503780816814" duration="476000" />
-      <workItem from="1503781329641" duration="11780000" />
+      <workItem from="1503781329641" duration="12320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14329000" />
+    <option name="totallyTimeSpent" value="14869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="0" />
@@ -519,40 +433,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <element signature="e#2247#3110#0" expanded="false" />
-            <element signature="e#2393#3097#0" expanded="false" />
-            <element signature="e#3196#3417#0" expanded="false" />
-            <element signature="e#4902#5231#0" expanded="false" />
-            <element signature="e#10340#11655#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,15 +492,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="91" column="48" lean-forward="false" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="141" column="17" lean-forward="false" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+        <state relative-caret-position="436">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
           <folding>
             <element signature="e#713#850#0" expanded="false" />
             <element signature="e#864#2131#0" expanded="false" />
             <element signature="e#2155#2182#0" expanded="false" />
-            <element signature="e#2315#3308#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="e#2247#3110#0" expanded="false" />
+            <element signature="e#2393#3097#0" expanded="false" />
+            <element signature="e#3196#3417#0" expanded="false" />
+            <element signature="e#4902#5231#0" expanded="false" />
+            <element signature="e#10340#11655#0" expanded="false" />
           </folding>
         </state>
       </provider>
