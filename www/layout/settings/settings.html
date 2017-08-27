@@ -1,5 +1,5 @@
 <!-- toolbar -->
-<toolbar view-selected="settings" on-reset-settings="resetConnection()" on-test-connection="testConnection()"></toolbar>
+<toolbar view-selected="{{toolbarSelected}}" on-reset-settings="resetConnection()" on-finalize-settings="confirmDoc()" on-connect-settings="connect()" on-test-connection="testConnection()"></toolbar>
 
 <!-- Include the  content to show -->
 <div class="Settings">
@@ -37,7 +37,6 @@
 
             </div>
 
-
             <!-- username -->
             <div class="col-xs-12 username">
 
@@ -69,13 +68,13 @@
             </div>
 
             <!-- login now! -->
-            <div class="col-xs-12 connect">
+            <!--<div class="col-xs-12 connect">
 
                 <button type="button" class="btn btn-default btn-lg" ng-click="connect()">
                     Connectar
                 </button>
 
-            </div>
+            </div>-->
 
 
             <br>
@@ -93,8 +92,6 @@
             <div class="col-xs-12 ">
                 <h3>Ligação Drive FX</h3>
                 <p>Escolha o tipo de documento para Fatura</p>
-                <p>e depois</p>
-                <p>"Confirme"</p>
 
             </div>
 
@@ -108,13 +105,13 @@
             </div>
 
             <!-- Confirm now! -->
-            <div class="col-xs-12 confirm">
+            <!-- <div class="col-xs-12 confirm">
 
-                <button type="button" class="btn btn-default btn-lg" ng-click="confirmDoc()">
-                    Confirme
-                </button>
+               <button type="button" class="btn btn-default btn-lg" ng-click="confirmDoc()">
+                     Confirme
+                 </button>
 
-            </div>
+            </div>-->
 
         </div>
 

@@ -5,10 +5,14 @@ app
         $scope.step1 = true;//add prod view
         $scope.step2 = false;//loading view
         $scope.step3 = false;//finished view
-        $scope.toolbarSelected = 'order';
+        $scope.toolbarSelected = 'order-start';
 
         //Products Collection
         $scope.productsList = [];
+
+        //Client Collection
+        $scope.clientList = [];
+        $scope.clientSelect = undefined;
 
         //for test
         /*$scope.product1 = {ref: 'a001', qtt:1};
@@ -24,19 +28,26 @@ app
         $scope.productsList.push($scope.product5);
         $scope.productsList.push($scope.product6);*/
 
+        $scope.client1 = {nome : 'Miguel' , no : 1};
+        $scope.client2 = {nome : 'Jõao' , no : 2};
+        $scope.clientList.push($scope.client1);
+        $scope.clientList.push($scope.client2);
+
         $scope.errorMsg = "";
 
         //check if it is in cache - configured
         var cachedObject =  localStorage.getItem('credentials');
         if ( cachedObject){
             $scope.step0 = false; //config needed
-            $scope.step1 = true;//add prod view
+            $scope.stepChoose = true;//choose client
+            $scope.step1 = false;//add prod view
             $scope.step2 = false;//loading view
             $scope.step3 = false;//finished view
-            $scope.toolbarSelected = 'order';
+            $scope.toolbarSelected = 'order-start';
 
         }else{
             $scope.step0 = true; //config needed
+            $scope.stepChoose = false;//choose client
             $scope.step1 = false;//add prod view
             $scope.step2 = false;//loading view
             $scope.step3 = false;//finished view
@@ -72,9 +83,6 @@ app
                 input.value = "";
             });
 
-
-
-
         };
 
         //on Remove product from list
@@ -95,15 +103,33 @@ app
             $rootScope.invoicePending = undefined;
             console.log("pending invoice");
 
+            $scope.step0 = false; //config needed
+            $scope.stepChoose = false;//choose client
+            $scope.step1 = true;//add prod view
+            $scope.step2 = false;//loading view
+            $scope.step3 = false;//finished view
+            $scope.toolbarSelected = 'order';
+
             //prepare invoice
             $scope.invoicePending.fis.forEach(function(productLine) {
                 if(productLine.ref !== ''){
-                    $scope.productsList.push({ref: productLine.ref, qtt: productLine.qtt, original:true})
+                    $scope.productsList.push({ref: productLine.ref, qtt: productLine.qtt, original:true});
                 }
             });
 
         }
 
+
+        $scope.onStartingOrder = function(){
+            //TODO validate if client is choosed
+            $scope.step0 = false; //config needed
+            $scope.stepChoose = false;//choose client
+            $scope.step1 = true;//add prod view
+            $scope.step2 = false;//loading view
+            $scope.step3 = false;//finished view
+            $scope.toolbarSelected = 'order';
+
+        }
 
         /**
          * Bar code matters
@@ -136,11 +162,14 @@ app
             console.log('resetting...');
             $scope.productsList = [];
             $scope.errorMsg = "";
+            //TODO reset client
             $scope.toolbarSelected = 'order';
             $scope.step0 = false; //config needed
-            $scope.step1 = true;//add prod view
+            $scope.stepChoose = true;//choose client
+            $scope.step1 = false;//add prod view
             $scope.step2 = false;//loading view
             $scope.step3 = false;//finished view
+            $scope.toolbarSelected = 'order-start';
         };
 
 
@@ -167,7 +196,7 @@ app
                 if ( cachedObject ){
                     var credentials = JSON.parse(cachedObject);
 
-
+                    //TODO insert client no into params
                     //#2 - Prepare params to creation_invoice WS
                     var paramsServer = {
                         credentials: credentials,
@@ -176,6 +205,7 @@ app
                     };
 
                     $scope.step0 = false; //config needed
+                    $scope.stepChoose = false;//choose client
                     $scope.step1 = false;//add prod view
                     $scope.step2 = true;//loading view
                     $scope.step3 = false;//finished view
@@ -215,7 +245,8 @@ app
 
                 }else{
                     $scope.step0 = false; //config needed
-                    $scope.step1 = true;//add prod view
+                    $scope.stepChoose = true;//choose client
+                    $scope.step1 = false;//add prod view
                     $scope.step2 = false;//loading view
                     $scope.step3 = false;//finished view
 
@@ -234,7 +265,7 @@ app
                     var credentials = JSON.parse(cachedObject);
                     var docType = credentials.docType;
 
-
+                    //TODO insert client no into params
                     //#2 - Prepare params to creation_invoice WS
                     var paramsServer = {
                         credentials: credentials,
@@ -244,6 +275,7 @@ app
                     };
 
                     $scope.step0 = false; //config needed
+                    $scope.stepChoose = false;//choose client
                     $scope.step1 = false;//add prod view
                     $scope.step2 = true;//loading view
                     $scope.step3 = false;//finished view
@@ -259,6 +291,7 @@ app
                                 //show error and then back to order view
                                 $scope.errorMsg = data;
                                 $scope.step0 = false; //config needed
+                                $scope.stepChoose = false;//choose client
                                 $scope.step1 = true;//add prod view
                                 $scope.step2 = false;//loading view
                                 $scope.step3 = false;//finished view
@@ -267,6 +300,7 @@ app
                                 $scope.errorMsg = "";
                                 //Created!
                                 $scope.step0 = false; //config needed
+                                $scope.stepChoose = false;//choose client
                                 $scope.step1 = false;//add prod view
                                 $scope.step2 = false;//loading view
                                 $scope.step3 = true;//finished view
@@ -282,9 +316,11 @@ app
 
                 }else{
                     $scope.step0 = false; //config needed
-                    $scope.step1 = true;//add prod view
+                    $scope.stepChoose = true;//choose client
+                    $scope.step1 = false;//add prod view
                     $scope.step2 = false;//loading view
                     $scope.step3 = false;//finished view
+                    $scope.toolbarSelected = 'order-start';
 
 
                 }

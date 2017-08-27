@@ -5,11 +5,14 @@ app
             restrict: 'EA',
             scope: {
                 viewSelected:'@',
+                onStart:'&?',
                 onAdd:'&?',
                 onReset:'&?',
                 onFinish:'&?',
                 onResetSettings:'&?',
                 onTestConnection:'&?',
+                onConnectSettings:'&?',
+                onFinalizeSettings:'&?',
                 onRefreshList:'&?'
             },
             templateUrl: 'shared/toolbar/toolbar.html',
@@ -27,6 +30,12 @@ app
                 /**
                  * Orders
                  */
+                scope.onStartOrder = function(){
+                    if(scope.onStart){
+                        scope.onStart();
+                    }
+                };
+
                 scope.addNewProduct = function(){
                     if(scope.onAdd){
                         scope.onAdd();
@@ -61,6 +70,18 @@ app
                         scope.onTestConnection();
                     }
                 };
+
+                scope.connectSettings = function(){
+                    if(scope.onConnectSettings){
+                        scope.onConnectSettings();
+                    }
+                };
+
+                scope.finalizeSettings = function(){
+                    if(scope.onFinalizeSettings){
+                        scope.onFinalizeSettings();
+                    }
+                }
 
                 /**
                  * Pending

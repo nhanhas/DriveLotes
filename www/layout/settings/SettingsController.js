@@ -1,5 +1,8 @@
 app
     .controller('SettingsController', ['$scope', '$location','$rootScope', '$http',function($scope, $location,$rootScope, $http) {
+
+        $scope.toolbarSelected = 'settings';
+
         //initialize view vars - For production - clean credentials vars
         $scope.backendUrl = 'https://developer.phcfx.com/app/';
         $scope.appId = 'D61151BF98';
@@ -20,6 +23,11 @@ app
             $scope.step2 = ($scope.credentials && $scope.isReadyConnection) && $scope.docType === undefined;
             $scope.step3 = ($scope.credentials && $scope.isReadyConnection) && $scope.docType !== undefined;
 
+            $scope.toolbarSelected = $scope.step2 === true ? 'settings-finalize' : 'settings';
+
+            if($scope.step3){
+                $scope.toolbarSelected = 'settings-last';
+            }
         };
 
         //run update flags now!

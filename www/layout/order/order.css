@@ -74,6 +74,11 @@
         vertical-align: middle; }
   .Order .order-hint {
     margin-top: 30px; }
+  .Order .client-select {
+    margin-top: 10px; }
+    .Order .client-select select {
+      color: black;
+      width: 200px; }
   .Order .grid-row .header {
     background-color: #107360;
     color: white;

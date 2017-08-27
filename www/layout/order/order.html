@@ -1,5 +1,5 @@
 <!-- toolbar -->
-<toolbar view-selected="{{toolbarSelected}}" on-add="onAddNewProduct()" on-reset="onResetAll()" on-finish="onFinishInvoice()"></toolbar>
+<toolbar view-selected="{{toolbarSelected}}" on-start="onStartingOrder()" on-add="onAddNewProduct()" on-reset="onResetAll()" on-finish="onFinishInvoice()"></toolbar>
 
 <!-- Include the  content to show -->
 <div class="Order">
@@ -12,6 +12,26 @@
                 <h3>Configuração necessária</h3>
                 <h3>para criar Faturas</h3>
                 <span><i class="fa fa fa-cogs fa-3x"></i></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Choose client -->
+    <div class="panel order-view" ng-show="stepChoose">
+        <div class="row config-row">
+
+            <div class="col-xs-12 text-center">
+                <h3>Escolha Cliente</h3>
+                <h3>para a nova Fatura</h3>
+            </div>
+            <!-- client choose-->
+            <div class="col-xs-12 text-center client-select">
+
+                <select ng-model="clientSelected" class="client-option">
+                    <option ng-repeat="client in clientList" value="{{client.no}}">{{client.nome}}</option>
+                </select>
+
             </div>
 
         </div>
