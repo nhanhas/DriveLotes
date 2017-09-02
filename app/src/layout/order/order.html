@@ -92,7 +92,7 @@
 
                         <div class="col-xs-5 product-columns"><span>{{product.ref}}</span></div>
                         <div class="col-xs-5 product-columns">
-                            <input type="number" value="{{product.qtt}}">
+                            <input type="number" ng-model="product.qtt" value="{{product.qtt}}">
                             <!--<span>{{product.qtt}}</span>-->
                         </div>
                         <div class="col-xs-2 product-columns" ng-click="removeProduct(product.ref)"><i class="fa fa-trash"></i></div>

@@ -3,6 +3,7 @@ app
 
         $scope.invoiceList = [];
         $scope.toolbarSelected = 'pending-config';
+        $scope.loadingDocuments = false;
 
         $scope.getInvoiceDate = function(date){
             return date.split(" ")[0];
@@ -10,6 +11,7 @@ app
 
         //get Document Types
         $scope.getDocuments = function(){
+            $scope.loadingDocuments = true;
 
             //check if it is in cache
             var cachedObject =  localStorage.getItem('credentials');
@@ -19,6 +21,7 @@ app
 
             $http.post('../server/get_invoices.php', $scope.credentials)
                 .success(function(data) {
+                    $scope.loadingDocuments = false;
                     if(data !== " "){
                         if(data.result.length > 0 ){
                             $scope.invoiceList = data.result;
@@ -26,6 +29,7 @@ app
                     }
                 })
                 .error(function(data) {
+                    $scope.loadingDocuments = false;
                     console.log('Error: ' + data);
                 });
 

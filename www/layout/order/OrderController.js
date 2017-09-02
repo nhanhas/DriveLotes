@@ -29,10 +29,10 @@ app
         $scope.productsList.push($scope.product5);
         $scope.productsList.push($scope.product6);*/
 
-        $scope.client1 = {nome : 'Miguel' , no : 1};
+        /*$scope.client1 = {nome : 'Miguel' , no : 1};
         $scope.client2 = {nome : 'Jõao' , no : 2};
         $scope.clientList.push($scope.client1);
-        $scope.clientList.push($scope.client2);
+        $scope.clientList.push($scope.client2);*/
 
         $scope.errorMsg = "";
 
@@ -234,12 +234,12 @@ app
                 //for test
                 //$scope.product1 = {ref: 'b001', qtt:2};
                 //$scope.productsList.push($scope.product1);
-
+                $scope.invoicePending.fis = [];//reset original fis and add new ones
                 $scope.productsList.forEach(function(productLine){
 
-                    if(!productLine.original){
-                        $scope.invoicePending.fis.push({ref: productLine.ref, qtt:productLine.qtt});
-                    }
+                    //if(!productLine.original){
+                    $scope.invoicePending.fis.push({ref: productLine.ref, qtt:productLine.qtt});
+                    //}
 
                 });
 
