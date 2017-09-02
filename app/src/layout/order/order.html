@@ -32,6 +32,9 @@
                     <option ng-repeat="client in clientList" value="{{client.no}}">{{client.nome}}</option>
                 </select>
 
+                <span ng-show="loadingClients"><i class="fa fa fa-spinner fa-spin"></i></span>
+
+
             </div>
 
         </div>

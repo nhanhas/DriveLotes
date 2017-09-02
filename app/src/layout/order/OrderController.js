@@ -12,7 +12,8 @@ app
 
         //Client Collection
         $scope.clientList = [];
-        $scope.clientSelect = undefined;
+        $scope.clientSelected = undefined;
+        $scope.loadingClients = false;
 
         //for test
         /*$scope.product1 = {ref: 'a001', qtt:1};
@@ -110,6 +111,10 @@ app
             $scope.step3 = false;//finished view
             $scope.toolbarSelected = 'order';
 
+            //extract the client Number
+            $scope.clientSelected = $scope.invoicePending.no;
+
+
             //prepare invoice
             $scope.invoicePending.fis.forEach(function(productLine) {
                 if(productLine.ref !== ''){
@@ -119,7 +124,7 @@ app
 
         }
 
-
+        //for toolbar stepChoose
         $scope.onStartingOrder = function(){
             //TODO validate if client is choosed
             $scope.step0 = false; //config needed
@@ -129,6 +134,54 @@ app
             $scope.step3 = false;//finished view
             $scope.toolbarSelected = 'order';
 
+        }
+
+        //load clients from Drive FX
+        $scope.fetchClients = function () {
+
+            var cachedObject =  localStorage.getItem('credentials');
+            if ( cachedObject ){
+                var credentials = JSON.parse(cachedObject);
+
+                //#2 - Prepare params to creation_invoice WS
+                var paramsServer = {
+                    credentials: credentials
+                };
+
+                //#3 - Make the Call!!
+                $http.post('../server/fetch_clients.php', paramsServer)
+                    .success(function(data) {
+                        $scope.loadingClients = false;
+
+                        //result
+                        console.log(data);
+                        if(data.result.length > 0){
+                            $scope.clientList = data.result;
+                        }else{
+                            //TODO - Message in case of an error
+                        }
+
+
+
+                    })
+                    .error(function(data) {
+                        $scope.loadingClients = false;
+                        console.log('Error: ' + data);
+                    });
+
+            }
+
+
+
+        };
+
+        //In case that stepChoose is active an there's no clients then load
+        if($scope.stepChoose || $scope.clientList.length === 0 ){
+            $scope.loadingClients = true;
+
+            $scope.fetchClients();
+        }else{
+            $scope.loadingClients = false;
         }
 
         /**
@@ -162,7 +215,8 @@ app
             console.log('resetting...');
             $scope.productsList = [];
             $scope.errorMsg = "";
-            //TODO reset client
+
+            $scope.clientSelected = undefined;
             $scope.toolbarSelected = 'order';
             $scope.step0 = false; //config needed
             $scope.stepChoose = true;//choose client
@@ -196,7 +250,7 @@ app
                 if ( cachedObject ){
                     var credentials = JSON.parse(cachedObject);
 
-                    //TODO insert client no into params
+
                     //#2 - Prepare params to creation_invoice WS
                     var paramsServer = {
                         credentials: credentials,
@@ -265,10 +319,10 @@ app
                     var credentials = JSON.parse(cachedObject);
                     var docType = credentials.docType;
 
-                    //TODO insert client no into params
                     //#2 - Prepare params to creation_invoice WS
                     var paramsServer = {
                         credentials: credentials,
+                        clientNo : $scope.clientSelected,
                         products: $scope.productsList,
                         docType: docType,
                         option: 0//print options

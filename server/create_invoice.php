@@ -6,6 +6,8 @@
 
     //credentials
     $credentials = $request->credentials;
+    //client
+    $clientNo = $request->clientNo;
     //products
     $products = $request->products;
     //invoice doc type
@@ -21,11 +23,11 @@
     // #1 - Make a login request to validate Credentials
     $ch = doDriveLogin($credentials);
 
-    // #2 - Verify Client, if does not exist then create it @ Drive
-    $ch = doClientProcess($ch, $credentials);
+    // #2 - Verify Client, if does not exist then create it @ Drive - No necessary
+    //$ch = doClientProcess($ch, $credentials, $clientNo);
 
     // #3 - Finally, make the invoice
-    $ch = doInvoiceProcess($ch, $credentials, $docType, $products);
+    $ch = doInvoiceProcess($ch, $credentials, $docType, $products, $clientNo);
 
     echo " ";
 
@@ -136,7 +138,7 @@
     /*************************************************************
     *						 Invoice Process  				    *
     *************************************************************/
-    function doInvoiceProcess($ch, $credentials, $docType, $products){
+    function doInvoiceProcess($ch, $credentials, $docType, $products, $clientNo){
         	// #1 - Get a new instance of Invoice
         	$url = $credentials->backendUrl . 'REST/FtWS/getNewInstance';
         	$params =  array ('ndos' => $docType);
@@ -152,7 +154,8 @@
         	// #2 - Fulfill Ft Instance//
 
         	// #2.1 - client to ft
-        	$ftNewInstance['no'] = $GLOBALS['customerNo'];
+        	//$ftNewInstance['no'] = $GLOBALS['customerNo'];
+        	$ftNewInstance['no'] = $clientNo;
 
         	// #2.2 - actEntity for cl
         	$url = $credentials->backendUrl . '/REST/FtWS/actEntity';
