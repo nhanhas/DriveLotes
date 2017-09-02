@@ -32,9 +32,10 @@
                     <!-- header -->
                     <div class="row header-th-group">
 
-                        <div class="col-xs-2 header-th header-ndoc">Nº Doc</div>
-                        <div class="col-xs-4 header-th ">Data</div>
-                        <div class="col-xs-4 header-th ">Total</div>
+                        <!--<div class="col-xs-2 header-th header-ndoc">NºDoc</div>-->
+                        <div class="col-xs-4 header-th header-ndoc">Nome</div>
+                        <div class="col-xs-3 header-th ">Data</div>
+                        <div class="col-xs-3 header-th ">Total</div>
                         <div class="col-xs-2 header-th header-data">...</div>
                     </div>
 
@@ -49,9 +50,10 @@
                     <!-- orders -->
                     <div class="row product-item" ng-show="invoiceList.length > 0" ng-repeat="invoice in invoiceList">
 
-                        <div class="col-xs-2 product-columns"><span>{{invoice.fno}}</span></div>
-                        <div class="col-xs-4 product-columns"><span>{{getInvoiceDate(invoice.fdata) | date}}</span></div>
-                        <div class="col-xs-4 product-columns"><span>{{invoice.etotal}}</span></div>
+                        <!--<div class="col-xs-2 product-columns"><span>{{invoice.fno}}</span></div>-->
+                        <div class="col-xs-4 product-columns"><span>{{invoice.nome}}</span></div>
+                        <div class="col-xs-3 product-columns"><span>{{getInvoiceDate(invoice.fdata) | date}}</span></div>
+                        <div class="col-xs-3 product-columns"><span>{{invoice.etotal}}</span></div>
                         <div class="col-xs-2 product-columns" ng-click="editInvoice(invoice)"><i class="fa fa-edit"></i></div>
 
                     </div>

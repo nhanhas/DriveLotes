@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="251cd3cf-f67e-4300-9629-9e42e1b8d874" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/order.html" afterPath="$PROJECT_DIR$/app/src/layout/order/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/pending/PendingController.js" afterPath="$PROJECT_DIR$/app/src/layout/pending/PendingController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/pending/pending.html" afterPath="$PROJECT_DIR$/app/src/layout/pending/pending.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/continue_pending.php" afterPath="$PROJECT_DIR$/server/continue_pending.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/www/layout/order/OrderController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/order.html" afterPath="$PROJECT_DIR$/www/layout/order/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/pending/PendingController.js" afterPath="$PROJECT_DIR$/www/layout/pending/PendingController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/pending/pending.scss" afterPath="$PROJECT_DIR$/app/src/layout/pending/pending.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/pending/pending.css" afterPath="$PROJECT_DIR$/www/layout/pending/pending.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/pending/pending.html" afterPath="$PROJECT_DIR$/www/layout/pending/pending.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="262">
               <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding>
                 <element signature="e#1559#1872#0" expanded="false" />
@@ -96,11 +91,32 @@
       <file leaf-file-name="pending.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+            <state relative-caret-position="373">
+              <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pending.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="127" column="30" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PendingController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/layout/pending/PendingController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding>
+                <element signature="e#428#1256#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -146,8 +162,9 @@
       <find>clientSelected</find>
       <find>doInvoiceProcess</find>
       <find>doDriveLogin</find>
-      <find>clientSelect</find>
       <find>spinn</find>
+      <find>clientSelect</find>
+      <find>produc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,7 +178,6 @@
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.scss" />
         <option value="$PROJECT_DIR$/app/src/index.html" />
         <option value="$PROJECT_DIR$/app/src/shared/utils/ClientUtils.js" />
-        <option value="$PROJECT_DIR$/app/src/layout/pending/pending.scss" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
         <option value="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" />
@@ -170,11 +186,12 @@
         <option value="$PROJECT_DIR$/app/src/layout/order/order.scss" />
         <option value="$PROJECT_DIR$/server/fetch_clients.php" />
         <option value="$PROJECT_DIR$/server/create_invoice.php" />
-        <option value="$PROJECT_DIR$/app/src/layout/pending/pending.html" />
         <option value="$PROJECT_DIR$/app/src/layout/pending/PendingController.js" />
         <option value="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
         <option value="$PROJECT_DIR$/app/src/layout/order/order.html" />
         <option value="$PROJECT_DIR$/server/continue_pending.php" />
+        <option value="$PROJECT_DIR$/app/src/layout/pending/pending.html" />
+        <option value="$PROJECT_DIR$/app/src/layout/pending/pending.scss" />
       </list>
     </option>
   </component>
@@ -310,12 +327,12 @@
       <workItem from="1503780816814" duration="476000" />
       <workItem from="1503781329641" duration="12385000" />
       <workItem from="1504352181012" duration="431000" />
-      <workItem from="1504365746180" duration="4521000" />
+      <workItem from="1504365746180" duration="5325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19886000" />
+    <option name="totallyTimeSpent" value="20690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="6" />
@@ -596,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -662,25 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/PendingController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fetch_clients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -722,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="262">
           <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
             <element signature="e#1559#1872#0" expanded="false" />
@@ -741,6 +732,34 @@
             <element signature="e#15192#16020#0" expanded="false" />
             <element signature="e#16099#17158#0" expanded="false" />
             <element signature="e#17205#18745#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/pending.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="127" column="30" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/pending/PendingController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#428#1256#0" expanded="false" />
           </folding>
         </state>
       </provider>
