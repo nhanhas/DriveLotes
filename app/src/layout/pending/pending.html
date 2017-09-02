@@ -49,7 +49,7 @@
                     <div class="row product-item" ng-show="invoiceList.length > 0" ng-repeat="invoice in invoiceList">
 
                         <div class="col-xs-2 product-columns"><span>{{invoice.fno}}</span></div>
-                        <div class="col-xs-4 product-columns"><span>{{getInvoiceDate(invoice.fdata)}}</span></div>
+                        <div class="col-xs-4 product-columns"><span>{{getInvoiceDate(invoice.fdata) | date}}</span></div>
                         <div class="col-xs-4 product-columns"><span>{{invoice.etotal}}</span></div>
                         <div class="col-xs-2 product-columns" ng-click="editInvoice(invoice)"><i class="fa fa-edit"></i></div>
 
