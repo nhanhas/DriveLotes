@@ -4,11 +4,19 @@ app
         $scope.toolbarSelected = 'settings';
 
         //initialize view vars - For production - clean credentials vars
+        /*
         $scope.backendUrl = 'https://developer.phcfx.com/app/';
         $scope.appId = 'D61151BF98';
         $scope.username = 'parceiro';
         $scope.password = 'parceiro2015';
         $scope.company = 'Dev000001';
+        */
+
+        $scope.backendUrl = 'http://sis04.drivefx.net/E252DC0A/PHCWS/';
+        $scope.appId = 'HYU45F-FKEIDD-K93DUJ-ALRNJE';
+        $scope.username = 'suporte';
+        $scope.password = '12345678';
+        $scope.company = '';
 
         $scope.credentials = undefined;
 

@@ -58,31 +58,68 @@ app
         //after "add new product" and then decoded
         $scope.afterDecode = function (codeResult){
 
-            var newProduct = {
-                    ref: codeResult,
-                    qtt: 1
-            };
+            var cachedObject =  localStorage.getItem('credentials');
+            if ( cachedObject ){
+                var credentials = JSON.parse(cachedObject);
 
-            $timeout(function() {
-                var alreadyInlist = false;
-                //#1 - check if already in list
-                $scope.productsList.forEach(function(product) {
-                    if(product.ref === newProduct.ref){
-                        //+1 qtt
-                        product.qtt++;
-                        alreadyInlist = true;
-                    }
-                });
+                //#2 - Prepare params to get_refs_by_code WS
+                var paramsServer = {
+                    credentials: credentials,
+                    codeBar : codeResult
+                };
 
-                //#2 - store it into order if not in list
-                if(!alreadyInlist){
-                    $scope.productsList.push(newProduct);
-                }
+                //#3 - Make the Call!!
+                $http.post('../server/get_refs_by_code.php', paramsServer)
+                    .success(function(data) {
 
-                //#3 - reset input file
-                var input = document.querySelector("input[type=file]");
-                input.value = "";
-            });
+                        //result
+                        console.log(data);
+                        if(data.result.length > 0){
+                            var lote = data.result[0];
+                            //Start processing result
+                            var preOrderList = lote.u6526_lotes_reservas || [];
+                            var totalReserved = 0; //counter to see total of tabuleiros reserved (used in case of Final Consumer)
+                            var productToAdd = undefined;
+
+                            //#1 - Iterate reservations
+                            preOrderList.forEach(function(reservation) {
+                                if(reservation.no.toString() === $scope.clientSelected){
+                                    //means that client has a reservation
+                                    productToAdd = {
+                                      ref : lote.ref,
+                                      qtt : reservation.qttreservada
+                                    };
+                                }else{
+                                    totalReserved = totalReserved + reservation.qttreservada;
+                                }
+                            });
+
+                            //#1.1 - means that this client doesnt have a reservation
+                            productToAdd = productToAdd || {ref:lote.ref, qtt : (lote.qtt - totalReserved)};
+
+
+                            //#2 - Store product into order
+                            $scope.productsList.push(productToAdd);
+
+                            //#3 - reset input file
+                            var input = document.querySelector("input[type=file]");
+                            input.value = "";
+
+
+                        }else{
+                            $scope.errorMsg = "Lote não encontrado no Drive FX";
+                        }
+
+
+
+                    })
+                    .error(function(data) {
+                        $scope.errorMsg = "Lote não encontrado no Drive FX";
+                        console.log('Error: ' + data);
+                    });
+
+            }
+
 
         };
 
