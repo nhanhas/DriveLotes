@@ -74,8 +74,11 @@ app
 
                         //result
                         console.log(data);
-                        if(data.result.length > 0){
-                            var lote = data.result[0];
+                        if(data.lote){
+                            //fulfill server result
+                            var lote = data.lote;
+                            var meioTab = data.meioTabuleiro;
+
                             //Start processing result
                             var preOrderList = lote.u6526_lotes_reservas || [];
                             var totalReserved = 0; //counter to see total of tabuleiros reserved (used in case of Final Consumer)
@@ -86,8 +89,10 @@ app
                                 if(reservation.no.toString() === $scope.clientSelected){
                                     //means that client has a reservation
                                     productToAdd = {
+                                      design : lote.design,
                                       ref : lote.ref,
-                                      qtt : reservation.qttreservada
+                                      qtt : reservation.qttreservada,
+                                      half : false
                                     };
                                 }else{
                                     totalReserved = totalReserved + reservation.qttreservada;
@@ -95,11 +100,16 @@ app
                             });
 
                             //#1.1 - means that this client doesnt have a reservation
-                            productToAdd = productToAdd || {ref:lote.ref, qtt : (lote.qtt - totalReserved)};
+                            productToAdd = productToAdd || {design : lote.design, ref:lote.ref, qtt : (lote.qtt - totalReserved),half : false  };
 
 
                             //#2 - Store product into order
                             $scope.productsList.push(productToAdd);
+
+                            //#2 - Store half tabuleiro
+                            if(meioTab){
+                                $scope.productsList.push({design : meioTab.design, ref:meioTab.ref, qtt : 0,half : true});
+                            }
 
                             //#3 - reset input file
                             var input = document.querySelector("input[type=file]");

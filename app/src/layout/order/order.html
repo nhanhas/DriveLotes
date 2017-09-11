@@ -1,6 +1,7 @@
 <!-- toolbar -->
 <toolbar view-selected="{{toolbarSelected}}" on-start="onStartingOrder()" on-add="onAddNewProduct()" on-reset="onResetAll()" on-finish="onFinishInvoice()"></toolbar>
 
+
 <!-- Include the  content to show -->
 <div class="Order">
 
@@ -66,9 +67,9 @@
 
                     <!-- header -->
                     <div class="row header-th-group">
-
-                        <div class="col-xs-5 header-th header-ref">Ref.</div>
-                        <div class="col-xs-5 header-th ">Quantidade</div>
+                        <div class="col-xs-2 header-th ">1/2</div>
+                        <div class="col-xs-5 header-th header-ref">Prod.</div>
+                        <div class="col-xs-3 header-th ">Qtt</div>
                         <div class="col-xs-2 header-th header-qtt">...</div>
                     </div>
 
@@ -90,11 +91,16 @@
                     <!-- order lines -->
                     <div class="row product-item" ng-show="productsList.length > 0" ng-repeat="product in productsList">
 
-                        <div class="col-xs-5 product-columns"><span>{{product.ref}}</span></div>
-                        <div class="col-xs-5 product-columns">
+                        <div class="col-xs-2 product-columns text-center">
+                            <span><input type="checkbox" ng-model="product.half" style="width: auto" value="{{product.half}}"></span>
+
+                        </div>
+                        <div class="col-xs-5 product-columns"><span>{{product.design}}</span></div>
+                        <div class="col-xs-3 product-columns">
                             <input type="number" ng-model="product.qtt" value="{{product.qtt}}">
                             <!--<span>{{product.qtt}}</span>-->
                         </div>
+
                         <div class="col-xs-2 product-columns" ng-click="removeProduct(product.ref)"><i class="fa fa-trash"></i></div>
 
                     </div>

@@ -105,7 +105,8 @@
         .Order .grid-row .grid .product-item .product-columns input {
           border: none;
           text-align: center;
-          background-color: #0d5d4d; }
+          background-color: #0d5d4d;
+          width: 100%; }
   .Order .loading-row {
     margin-top: 120px !important; }
   .Order .finish-row {

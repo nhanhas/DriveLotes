@@ -43,7 +43,53 @@ function getLote($ch, $credentials, $codeBar){
     							);
 	$response=doPhcFXRequest($ch, $url,$params);
 	//var_dump($response);
-	echo json_encode( $response );
+	//echo json_encode( $response );
+
+	if(isset($response['messages'][0]['messageCodeLocale'])){
+        echo $response['messages'][0]['messageCodeLocale'] ;
+        return false;
+    }
+    if(empty($response['result'])){
+        echo "Não foi encontrado nenhum lote com esta referência" ;
+        return false;
+    }
+
+    $lote = $response['result'][0];
+    $fullTabuleiroRef = $lote['ref'];
+
+
+    //Now get the ref of half tabuleiro
+    $params =  array('itemQuery' => '{"groupByItems":[],
+                                    "lazyLoaded":false,
+                                    "joinEntities":[],
+                                    "orderByItems":[],
+                                    "SelectItems":[],
+                                    "entityName":"St",
+                                    "filterItems":[{
+                                                    "comparison":0,
+                                                    "filterItem":"st.ref",
+                                                    "valueItem":"'.$fullTabuleiroRef.'",
+                                                    "groupItem":0,
+                                                    "checkNull":false,
+                                                    "skipCheckType":false
+                                                }
+                                                ]}'
+                );
+    $result =  array();
+    $result['lote'] = $lote;
+
+    $response=doPhcFXRequest($ch, $url,$params);
+
+    if(empty($response['result'])){
+        echo json_encode($result, true) ;
+        return false;
+    }
+    $meioTabuleiro = $response['result'][0];
+    $result['meioTabuleiro'] = $meioTabuleiro['u6526_lotes_meio_tab'];
+
+    echo json_encode($result, true) ;
+
+
 }
 ### GENERIC FUNCTIONS
 function doPhcFXRequest($ch, $url,$params){
