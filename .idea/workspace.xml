@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="251cd3cf-f67e-4300-9629-9e42e1b8d874" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/order.html" afterPath="$PROJECT_DIR$/app/src/layout/order/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/order/order.scss" afterPath="$PROJECT_DIR$/app/src/layout/order/order.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/get_refs_by_code.php" afterPath="$PROJECT_DIR$/server/get_refs_by_code.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/OrderController.js" afterPath="$PROJECT_DIR$/www/layout/order/OrderController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/order.css" afterPath="$PROJECT_DIR$/www/layout/order/order.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/order/order.html" afterPath="$PROJECT_DIR$/www/layout/order/order.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,13 +21,14 @@
       <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
+            <state relative-caret-position="15">
               <caret line="1" column="165" lean-forward="true" selection-start-line="1" selection-start-column="165" selection-end-line="1" selection-end-column="165" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
               </folding>
@@ -299,12 +295,12 @@
       <workItem from="1503781329641" duration="12385000" />
       <workItem from="1504352181012" duration="431000" />
       <workItem from="1504365746180" duration="5404000" />
-      <workItem from="1505158103348" duration="7606000" />
+      <workItem from="1505158103348" duration="7747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28375000" />
+    <option name="totallyTimeSpent" value="28516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1005" extended-state="6" />
@@ -354,6 +350,7 @@
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
           </folding>
@@ -404,6 +401,7 @@
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
           </folding>
@@ -478,6 +476,7 @@
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
           </folding>
@@ -762,13 +761,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
+        <state relative-caret-position="15">
           <caret line="1" column="165" lean-forward="true" selection-start-line="1" selection-start-column="165" selection-end-line="1" selection-end-column="165" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
           </folding>
