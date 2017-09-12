@@ -19,8 +19,14 @@
         <div class="col-xs-3 home-option" ng-click="goBack()">
             <i class="fa fa-home"></i>
         </div>
-        <div class="col-xs-3 add-product-option" ng-click="addNewProduct()">
-            <i class="fa fa-plus"></i>
+        <div class="col-xs-3 add-product-option">
+
+            <div class="add-prod-wheel" ng-show="addProdClicked">
+                <div class="col-xs-6" ng-click="addNewProductBar()"><i class="fa fa-barcode"></i></div>
+                <div class="col-xs-6" ng-click="addNewProductManual()"><i class="fa fa-pencil-square-o"></i></div>
+            </div>
+
+            <i class="fa fa-plus" ng-click="toggleAddNew()"></i>
             <p class="description">Adicionar</p>
         </div>
 

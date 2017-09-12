@@ -7,6 +7,7 @@ app
                 viewSelected:'@',
                 onStart:'&?',
                 onAdd:'&?',
+                onAddManual:'&?',
                 onReset:'&?',
                 onFinish:'&?',
                 onResetSettings:'&?',
@@ -18,6 +19,8 @@ app
             templateUrl: 'shared/toolbar/toolbar.html',
 
             link: function (scope, element, attrs) {
+
+                scope.addProdClicked = false;//for order view
 
                 scope.goBack = function (){
                     location.path('/home');
@@ -36,10 +39,29 @@ app
                     }
                 };
 
-                scope.addNewProduct = function(){
+                scope.toggleAddNew = function(){
+
+                    scope.addProdClicked = !scope.addProdClicked;
+
+
+                };
+
+                scope.addNewProductBar = function(){
+                    scope.addProdClicked = false;
                     if(scope.onAdd){
                         scope.onAdd();
                     }
+                };
+
+                scope.addNewProductManual = function(){
+                    scope.addProdClicked = false;
+                    var refLote = prompt("Referência do lote", "");
+                    if (refLote !== null) {
+                        if(scope.onAddManual){
+                            scope.onAddManual({ref: refLote});
+                        }
+                    }
+
                 };
 
                 scope.onResetAll = function(){
