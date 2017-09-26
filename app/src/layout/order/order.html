@@ -44,7 +44,7 @@
     <div class="panel order-view" ng-show="step1">
 
         <!-- product img -->
-        <div class="col-xs-8 col-xs-offset-2 bar-code text-center" ng-show="productsList.length !== 0 || liveIsReady">
+        <div class="col-xs-12 bar-code text-center" ng-show="productsList.length !== 0 || liveIsReady">
             <!--<span>Artigo</span>-->
             <input id="input-addon" type="file" accept="image/*" capture="camera"
                    onchange="angular.element(this).scope().imageUploaded(this)"/>

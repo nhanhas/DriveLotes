@@ -538,6 +538,7 @@ app
 
 
                     $scope.afterDecode(code);
+                    Quagga.stop();//stop after decode
                     //console.log(result.codeResult);
 
 

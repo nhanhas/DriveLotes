@@ -41,11 +41,20 @@ function getDocType($ch, $request){
                                                                      "comparison":0,
                                                                      "filterItem":"ft.ndoc",
                                                                      "valueItem": ' . $docType .',
-                                                                     "groupItem":0,
+                                                                     "groupItem":1,
                                                                      "checkNull":false,
                                                                      "skipCheckType":false,
                                                                      "type":"Number"
-                                                                 }
+                                                                 },
+                                                                 {
+                                                                      "comparison":0,
+                                                                      "filterItem":"ft.ousrinis",
+                                                                      "valueItem": "' . $usernameLogin .'",
+                                                                      "groupItem":0,
+                                                                      "checkNull":false,
+                                                                      "skipCheckType":false,
+                                                                      "type":"Number"
+                                                                  }
 
     															]}'
     							);
