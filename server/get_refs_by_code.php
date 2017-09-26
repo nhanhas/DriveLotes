@@ -87,6 +87,9 @@ function getLote($ch, $credentials, $codeBar){
     $meioTabuleiro = $response['result'][0];
     $result['meioTabuleiro'] = $meioTabuleiro['u6526_lotes_meio_tab'];
 
+
+    //TODO - Add to $result, the amount qtt purchased (!ft.draft)
+
     echo json_encode($result, true) ;
 
 

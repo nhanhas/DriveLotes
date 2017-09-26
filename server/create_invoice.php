@@ -176,10 +176,14 @@
         	// #2.2 - Fulfill products
         	foreach ($products as &$value) {
         		//echo $value->ref . "<br>";
-        		$fi = new stdClass();
-                $fi->ref = $value->ref;
-                $fi->qtt = $value->qtt;
-                $ftNewInstance['fis'][] = $fi;
+        		if($value->qtt != 0){
+        		    $fi = new stdClass();
+                    $fi->ref = $value->ref;
+                    $fi->qtt = $value->qtt;
+                    $fi->litem = $value->litem;
+                    $ftNewInstance['fis'][] = $fi;
+        		}
+
         	}
 
         	// #2.3 - actEntity for Fis

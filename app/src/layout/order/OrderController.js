@@ -92,6 +92,7 @@ app
                                       design : lote.design,
                                       ref : lote.ref,
                                       qtt : reservation.qttreservada,
+                                      litem: lote.codebar,
                                       half : false
                                     };
                                 }else{
@@ -100,7 +101,7 @@ app
                             });
 
                             //#1.1 - means that this client doesnt have a reservation
-                            productToAdd = productToAdd || {design : lote.design, ref:lote.ref, qtt : (lote.qtt - totalReserved),half : false  };
+                            productToAdd = productToAdd || {design : lote.design, litem:lote.codebar, ref:lote.ref, qtt : (lote.qtt - totalReserved),half : false  };
 
 
                             //#2 - Store product into order
@@ -165,7 +166,7 @@ app
             //prepare invoice
             $scope.invoicePending.fis.forEach(function(productLine) {
                 if(productLine.ref !== ''){
-                    $scope.productsList.push({ref: productLine.ref, qtt: productLine.qtt, original:true});
+                    $scope.productsList.push({ref: productLine.ref,litem: productLine.litem, design: productLine.design, qtt: productLine.qtt, original:true});
                 }
             });
 
