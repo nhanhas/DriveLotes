@@ -114,7 +114,7 @@ app
 
                             //#2 - Store half tabuleiro
                             if(meioTab){
-                                $scope.productsList.push({design : meioTab.design, ref:meioTab.ref, qtt : 0,half : true});
+                                $scope.productsList.push({design : meioTab.design, ref:meioTab.ref, qtt : 0 ,litem: lote.codebar,half : true});
                             }
 
                             //#3 - reset input file
