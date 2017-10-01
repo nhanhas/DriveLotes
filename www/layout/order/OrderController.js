@@ -78,6 +78,7 @@ app
                             //fulfill server result
                             var lote = data.lote;
                             var meioTab = data.meioTabuleiro;
+                            var qttSold = parseFloat(data.qttSold);
 
                             //Start processing result
                             var preOrderList = lote.u6526_lotes_reservas || [];
@@ -86,8 +87,8 @@ app
 
                             //#1 - Iterate reservations
                             preOrderList.forEach(function(reservation) {
-                                if(reservation.no.toString() === $scope.clientSelected){
-                                    //means that client has a reservation
+                                if(reservation.no.toString() === $scope.clientSelected && reservation.provided === false){
+                                    //means that client has a reservation and it is not provided yet
                                     productToAdd = {
                                       design : lote.design,
                                       ref : lote.ref,
@@ -96,12 +97,16 @@ app
                                       half : false
                                     };
                                 }else{
-                                    totalReserved = totalReserved + reservation.qttreservada;
+                                    if(reservation.provided === false){
+                                        //only count reservation left not provided
+                                        totalReserved = totalReserved + reservation.qttreservada;
+                                    }
+
                                 }
                             });
 
                             //#1.1 - means that this client doesnt have a reservation
-                            productToAdd = productToAdd || {design : lote.design, litem:lote.codebar, ref:lote.ref, qtt : (lote.qtt - totalReserved),half : false  };
+                            productToAdd = productToAdd || {design : lote.design, litem:lote.codebar, ref:lote.ref, qtt : (lote.qtt - qttSold - totalReserved),half : false  };
 
 
                             //#2 - Store product into order

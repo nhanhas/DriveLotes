@@ -88,7 +88,27 @@ function getLote($ch, $credentials, $codeBar){
     $result['meioTabuleiro'] = $meioTabuleiro['u6526_lotes_meio_tab'];
 
 
-    //TODO - Add to $result, the amount qtt purchased (!ft.draft)
+    // Add to $result, the amount qtt purchased (!ft.draft)
+    $url = $urlBase . "REST/addon/u6526_lotesWS/runCode";
+
+    $params =  array('entity' => json_encode($lote),
+                        'code' => 'u6526_get_qtt_sold',
+                        'payload' => '[]');
+
+
+
+    $response=doPhcFXRequest($ch, $url,$params);
+    //var_dump($response);
+    //echo json_encode( $response,true );
+
+    //add to result
+
+    if(isset($response['messages'][0]['messageCodeLocale'])){
+        $result['qttSold'] =  $response['messages'][0]['messageCode'];
+    }else{
+        $result['qttSold'] = 0;
+    }
+
 
     echo json_encode($result, true) ;
 
