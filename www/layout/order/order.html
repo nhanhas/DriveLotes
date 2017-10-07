@@ -1,6 +1,15 @@
 <!-- toolbar -->
 <toolbar view-selected="{{toolbarSelected}}" on-start="onStartingOrder()" on-add-manual="afterDecode(ref)" on-add="onAddNewProduct()" on-reset="onResetAll()" on-finish="onFinishInvoice()"></toolbar>
 
+<div class="sync-div" ng-show="synching">
+
+    <div class="col-xs-4 col-xs-offset-4 text-center">
+        <h5>A processar</h5>
+        <span><i class="fa fa fa-spinner fa-spin fa-3x"></i></span>
+    </div>
+
+</div>
+
 <!-- Include the  content to show -->
 <div class="Order">
 

@@ -1,6 +1,15 @@
 <!-- toolbar -->
 <toolbar view-selected="{{toolbarSelected}}" on-reset-settings="resetConnection()" on-finalize-settings="confirmDoc()" on-connect-settings="connect()" on-test-connection="testConnection()"></toolbar>
 
+<div class="sync-div" ng-show="synching">
+
+    <div class="col-xs-4 col-xs-offset-4 text-center">
+        <h5>A processar</h5>
+        <span><i class="fa fa fa-spinner fa-spin fa-3x"></i></span>
+    </div>
+
+</div>
+
 <!-- Include the  content to show -->
 <div class="Settings">
 

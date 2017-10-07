@@ -112,3 +112,18 @@
     margin-top: 120px !important; }
   .Order .config-row {
     margin-top: 120px !important; }
+
+.sync-div {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 1, 1, 0.3); }
+  .sync-div > div {
+    padding-bottom: 20px;
+    margin-top: 210px;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 24px; }

@@ -3,6 +3,8 @@ app
 
         $scope.toolbarSelected = 'settings';
 
+        $scope.synching = false;
+
         //initialize view vars - For production - clean credentials vars
         /*
         $scope.backendUrl = 'https://developer.phcfx.com/app/';
@@ -44,10 +46,11 @@ app
 
         //test Connection to drive
         $scope.testConnection = function(){
-
+            $scope.synching = true;
 
             $http.post('../server/test_connection.php', $scope.credentials)
                 .success(function(data) {
+                    $scope.synching = false;
                     /*$scope.formData = {}; // clear the form so our user is ready to enter another
                      $scope.todos = data;
                      console.log(data);*/
@@ -77,6 +80,7 @@ app
 
                 })
                 .error(function(data) {
+                    $scope.synching = false;
                     console.log('Error: ' + data);
                 });
 

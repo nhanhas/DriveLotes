@@ -9,6 +9,7 @@ app
 
         $scope.view = 'step0';
 
+        $scope.synching = false;
 
 
         //check if it is in cache
@@ -53,11 +54,11 @@ app
                         codeBar: codeResult
                     };
 
-
+                    $scope.synching = true;
                     //#3 - Make the Call!!
                     $http.post('../server/get_lote_treatment.php', paramsServer)
                         .success(function(data) {
-
+                            $scope.synching = false;
                             //result
                             console.log(data);
                             if(data.lote){
@@ -77,6 +78,7 @@ app
 
                         })
                         .error(function(data) {
+                            $scope.synching = false;
                             $scope.errorMsg = "Lote não encontrado no Drive FX";
                             console.log('Error: ' + data);
                         });

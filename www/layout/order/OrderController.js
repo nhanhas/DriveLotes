@@ -15,6 +15,8 @@ app
         $scope.clientSelected = undefined;
         $scope.loadingClients = false;
 
+        $scope.synching = false;
+
         //for test
         /*$scope.product1 = {ref: 'a001', qtt:1};
         $scope.product2 = {ref: 'b001', qtt:2};
@@ -68,9 +70,12 @@ app
                     codeBar : codeResult
                 };
 
+                $scope.synching = true;
+
                 //#3 - Make the Call!!
                 $http.post('../server/get_refs_by_code.php', paramsServer)
                     .success(function(data) {
+                        $scope.synching = false;
 
                         //result
                         console.log(data);
@@ -130,6 +135,7 @@ app
 
                     })
                     .error(function(data) {
+                        $scope.synching = false;
                         $scope.errorMsg = "Lote não encontrado no Drive FX";
                         console.log('Error: ' + data);
                     });

@@ -1,6 +1,15 @@
 <!-- toolbar -->
 <toolbar view-selected="{{toolbarSelected}}" on-refresh-list="getDocuments()"></toolbar>
 
+<div class="sync-div" ng-show="synching">
+
+    <div class="col-xs-4 col-xs-offset-4 text-center">
+        <h5>A processar</h5>
+        <span><i class="fa fa fa-spinner fa-spin fa-3x"></i></span>
+    </div>
+
+</div>
+
 <!-- Include the  content to show -->
 <div class="Pending">
 
@@ -43,7 +52,7 @@
                     <div class="row pending-hint" ng-show="invoiceList.length === 0" >
                         <div class="col-xs-12 text-center">
                             <span>Sem Faturas em aberto</span>
-                            <span ng-show="loadingDocuments"><i class="fa fa fa-spinner fa-spin"></i></span>
+                            <!-- <span ng-show="loadingDocuments"><i class="fa fa fa-spinner fa-spin"></i></span> -->
                         </div>
                     </div>
 

@@ -5,6 +5,8 @@ app
         $scope.toolbarSelected = 'pending-config';
         $scope.loadingDocuments = false;
 
+        $scope.synching = false;
+
         $scope.getInvoiceDate = function(date){
             return date.split(" ")[0];
         };
@@ -19,8 +21,12 @@ app
                 $scope.credentials = JSON.parse(cachedObject);
             }
 
+            $scope.synching = true;
+
             $http.post('../server/get_invoices.php', $scope.credentials)
                 .success(function(data) {
+                    $scope.synching = false;
+
                     $scope.loadingDocuments = false;
                     if(data !== " "){
                         if(data.result.length > 0 ){
@@ -29,6 +35,7 @@ app
                     }
                 })
                 .error(function(data) {
+                    $scope.synching = false;
                     $scope.loadingDocuments = false;
                     console.log('Error: ' + data);
                 });
