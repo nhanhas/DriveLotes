@@ -161,14 +161,19 @@ app
         //get Document Types
         $scope.getDocumentType = function(){
 
+
             //check if it is in cache
             var cachedObject =  localStorage.getItem('credentials');
             if ( cachedObject ){
                 $scope.credentials = JSON.parse(cachedObject);
             }
 
+            $scope.synching = true;
+
             $http.post('../server/get_doctypes.php', $scope.credentials)
                 .success(function(data) {
+
+                    $scope.synching = false;
 
                     if(data !== " "){
 
@@ -182,6 +187,7 @@ app
 
                 })
                 .error(function(data) {
+                    $scope.synching = false;
                     console.log('Error: ' + data);
                 });
 

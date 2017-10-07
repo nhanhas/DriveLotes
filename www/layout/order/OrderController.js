@@ -207,10 +207,13 @@ app
                     credentials: credentials
                 };
 
+                $scope.synching = true;
+
                 //#3 - Make the Call!!
                 $http.post('../server/fetch_clients.php', paramsServer)
                     .success(function(data) {
                         $scope.loadingClients = false;
+                        $scope.synching = false;
 
                         //result
                         console.log(data);
@@ -224,6 +227,7 @@ app
 
                     })
                     .error(function(data) {
+                        $scope.synching = false;
                         $scope.loadingClients = false;
                         console.log('Error: ' + data);
                     });
