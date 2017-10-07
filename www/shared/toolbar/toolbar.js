@@ -14,7 +14,11 @@ app
                 onTestConnection:'&?',
                 onConnectSettings:'&?',
                 onFinalizeSettings:'&?',
-                onRefreshList:'&?'
+                onRefreshList:'&?',
+                onAddManualTreat:'&?',
+                onAddTreat:'&?',
+                onResetTreat:'&?',
+                onSaveTreat:'&?'
             },
             templateUrl: 'shared/toolbar/toolbar.html',
 
@@ -112,6 +116,38 @@ app
                 scope.refreshList = function(){
                     if(scope.onRefreshList()){
                         scope.onRefreshList();
+                    }
+                };
+
+                /**
+                 * Treatment
+                 */
+                scope.addNewRefTreat = function(){
+                    scope.addProdClicked = false;
+                    if(scope.onAddTreat){
+                        scope.onAddTreat();
+                    }
+                };
+
+                scope.addNewTreatManual = function(){
+                    scope.addProdClicked = false;
+                    var refLote = prompt("Referência do lote", "");
+                    if (refLote !== null) {
+                        if(scope.onAddManualTreat){
+                            scope.onAddManualTreat({ref: refLote});
+                        }
+                    }
+
+                };
+                scope.saveTreat = function(){
+                    if(scope.onSaveTreat){
+                        scope.onSaveTreat();
+                    }
+                };
+
+                scope.resetTreat = function(){
+                    if(scope.onResetTreat){
+                        scope.onResetTreat();
                     }
                 };
 

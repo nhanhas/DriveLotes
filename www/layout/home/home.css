@@ -38,6 +38,17 @@
       font-size: 80px; }
     .Home .pending-view.move-pending-panel {
       left: 0; }
+  .Home .treatment-view {
+    background-color: #607D8B;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    padding-top: 155px; }
+    .Home .treatment-view .fa {
+      font-size: 80px; }
+    .Home .treatment-view.move-pending-panel {
+      left: 0; }
   .Home .settings-view {
     background-color: #ff5d4c;
     height: 100%;

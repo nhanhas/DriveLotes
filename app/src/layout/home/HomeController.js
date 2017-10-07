@@ -5,15 +5,19 @@ app
         $scope.viewSelected = 'home';
 
         $scope.startOrder = function(){
-            $location.path('/order')
+            $location.path('/order');
         };
 
         $scope.viewPending = function(){
-            $location.path('/pending')
+            $location.path('/pending');
+        };
+
+        $scope.addTreatment = function(){
+            $location.path('/treatment');
         };
 
         $scope.setupDrive = function(){
-            $location.path('/settings')
+            $location.path('/settings');
         };
 
     }]);

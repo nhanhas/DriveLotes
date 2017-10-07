@@ -16,6 +16,10 @@ app
                     templateUrl: 'layout/pending/pending.html',
                     controller: 'PendingController'
                 }).
+                when('/treatment', {
+                    templateUrl: 'layout/treatment/treatment.html',
+                    controller: 'TreatmentController'
+                }).
                 when('/settings', {
                     templateUrl: 'layout/settings/settings.html',
                     controller: 'SettingsController'

@@ -12,6 +12,9 @@
         <div class="col-xs-12 pending-option" ng-click="selectView('pending')" ng-class="{'smaller-icon' : viewSelected !== 'home' && viewSelected !== 'pending', 'option-selected' : viewSelected === 'pending'}">
             <i class="fa fa-folder-open-o"></i>
         </div>
+        <div class="col-xs-12 treatment-option" ng-click="selectView('treatment')" ng-class="{'smaller-icon' : viewSelected !== 'home' && viewSelected !== 'treatment', 'option-selected' : viewSelected === 'treatment'}">
+            <i class="fa fa-medkit"></i>
+        </div>
         <div class="col-xs-12 settings-option" ng-click="selectView('settings')" ng-class="{'smaller-icon' : viewSelected !== 'home' && viewSelected !== 'settings', 'option-selected' : viewSelected === 'settings'}">
             <i class="fa fa-cogs"></i>
         </div>

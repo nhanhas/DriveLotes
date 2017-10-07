@@ -1,0 +1,67 @@
+<!-- toolbar -->
+<toolbar view-selected="{{toolbarSelected}}" on-add-manual-treat="afterDecode(ref)" on-add-treat="onPickNewLote()" on-reset-treat="onResetTreat()" on-save-treat="onSaveTreat()"></toolbar>
+
+<!-- Include the  content to show -->
+<div class="Treatment">
+
+    <!-- Config needed... -->
+    <div class="panel treatment-view" ng-show="mustConfig">
+        <div class="row config-row">
+
+            <div class="col-xs-12 text-center">
+                <h3>Configuração necessária</h3>
+                <h3>para adicionar tratamentos</h3>
+                <span><i class="fa fa fa-cogs fa-3x"></i></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="panel treatment-view" ng-show="!mustConfig">
+
+        <!-- product img -->
+        <div class="col-xs-12 bar-code text-center" ng-show="liveIsReady || lotePicked">
+            <!--<span>Artigo</span>-->
+            <input id="input-addon" type="file" accept="image/*" capture="camera"
+                   onchange="angular.element(this).scope().imageUploaded(this)"/>
+
+            <div id="interactive-live" ng-if="liveStreamAvailable" class="viewport"></div>
+            <div id="interactive" ng-if="!liveStreamAvailable" class="viewport"></div>
+
+        </div>
+
+        <!-- hint -->
+        <div class="row treatment-hint" ng-show="!lotePicked" ng-click="onPickNewLote()">
+            <div class="col-xs-12 text-center">
+                <span>Registe um novo tratamento:</span>
+            </div>
+
+            <div class="col-xs-12 text-center">
+                <span><i class="fa fa-plus fa-2x"></i></span>
+            </div>
+
+            <div class="col-xs-12 text-center">
+                <span>"Adicionar Lote" </span>
+            </div>
+        </div>
+
+
+        <!-- erro msg -->
+        <div class="col-xs-12 text-center" ng-show="errorMsg.length > 0">
+            <span style="color:firebrick"><i class="fa fa-warning"></i> {{errorMsg}}</span>
+        </div>
+
+        <!-- form -->
+        <div class="row" ng-show="errorMsg.length === 0  && lotePicked">
+        <!--  <div class="row" >-->
+             <label>Descrição do tratamento</label>
+             <div class="col-xs-12">
+                 <textarea rows="4" cols="50" ng-model="treatmentText"></textarea>
+             </div>
+
+         </div>
+
+     </div>
+
+ </div>
+
