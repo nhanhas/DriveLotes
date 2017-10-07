@@ -1,11 +1,13 @@
 app
-    .controller('TreatmentController', ['$scope', '$location','$rootScope', '$timeout', function($scope, $location,$rootScope, $timeout) {
+    .controller('TreatmentController', ['$scope', '$location','$rootScope', '$timeout', '$http', function($scope, $location,$rootScope, $timeout, $http) {
 
         $scope.toolbarSelected = 'treatment';
         $scope.lotePicked = false;
         $scope.errorMsg = "";
         $scope.treatmentText = "";
         $scope.loteItem = undefined;
+
+        $scope.view = 'step0';
 
 
 
@@ -37,6 +39,8 @@ app
 
             $timeout( function(){
 
+                $scope.onResetTreat();
+
                 $scope.lotePicked = true;
 
                 var cachedObject =  localStorage.getItem('credentials');
@@ -48,10 +52,38 @@ app
                         credentials: credentials,
                         codeBar: codeResult
                     };
+
+
+                    //#3 - Make the Call!!
+                    $http.post('../server/get_lote_treatment.php', paramsServer)
+                        .success(function(data) {
+
+                            //result
+                            console.log(data);
+                            if(data.lote){
+                                //fulfill server result
+                                $scope.loteItem = data.lote;
+
+                                //#3 - reset input file
+                                var input = document.querySelector("input[type=file]");
+                                input.value = "";
+
+
+                            }else{
+                                $scope.errorMsg = "Lote não encontrado no Drive FX";
+                            }
+
+
+
+                        })
+                        .error(function(data) {
+                            $scope.errorMsg = "Lote não encontrado no Drive FX";
+                            console.log('Error: ' + data);
+                        });
+
+
                 }
 
-
-                //$scope.errorMsg = "Lote não encontrado no Drive FX";
 
             });//timeout for compile
         };
@@ -80,14 +112,71 @@ app
 
 
         $scope.onResetTreat = function (){
+            $scope.toolbarSelected = 'treatment';
             $scope.loteItem = undefined;
             $scope.lotePicked = false;
             $scope.errorMsg = "";
             $scope.treatmentText = "";
+            $scope.view = 'step0';
         };
 
         $scope.onSaveTreat = function (){
-            //todo
+            if($scope.treatmentText === ''){
+                return false;
+            }
+
+            $scope.view = 'step1';
+
+            var nowDate = new Date();
+            var day = nowDate.getDate();
+            var month = nowDate.getMonth();
+            var year = nowDate.getFullYear();
+
+            //store text in new treatment Row
+            var newTreatmentLine = {
+                descricao : $scope.treatmentText,
+                datatratamento : nowDate.toISOString()
+            };
+
+            $scope.loteItem.u6526_lotes_tratamentos.push(newTreatmentLine);
+
+            var cachedObject =  localStorage.getItem('credentials');
+            if ( cachedObject ) {
+                var credentials = JSON.parse(cachedObject);
+
+                //#2 - Prepare params to get_refs_by_code WS
+                var paramsServer = {
+                    credentials: credentials,
+                    lote: $scope.loteItem
+                };
+
+
+                //#3 - Make the Call!!
+                $http.post('../server/save_lote_treatment.php', paramsServer)
+                    .success(function(data) {
+
+                        //result
+                        console.log(data);
+                        if(data.success){
+                            $scope.view = 'step2';//view saved
+                            $scope.toolbarSelected = 'treatment-success';
+                        }else{
+                            $scope.errorMsg = "Ocorreu um erro a gravar o lote, tente mais tarde.";
+                            $scope.view = 'step0';//view treat again
+                            $scope.toolbarSelected = 'treatment';
+                        }
+
+
+
+
+                    })
+                    .error(function(data) {
+
+                        console.log('Error: ' + data);
+                    });
+
+
+            }
         };
 
         /**

@@ -167,7 +167,7 @@
             <p class="description">Outro Lote</p>
         </div>
 
-        <div class="col-xs-3 reset-option" ng-click="sveTreat()">
+        <div class="col-xs-3 reset-option" ng-click="saveTreat()">
             <i class="fa fa-save"></i>
             <p class="description">Guardar</p>
         </div>
@@ -183,6 +183,19 @@
         <div class="col-xs-6 reset-option" ng-click="goConfig()">
             <i class="fa fa-cogs"></i>
             <p class="description">Config.</p>
+        </div>
+
+    </div>
+
+    <div class="row text-center" ng-show="viewSelected==='treatment-success'">
+
+        <div class="col-xs-6 home-option" ng-click="goBack()">
+            <i class="fa fa-home"></i>
+        </div>
+
+        <div class="col-xs-6 reset-option" ng-click="resetTreat()">
+            <i class="fa fa-plus-circle"></i>
+            <p class="description">Novo tratamento</p>
         </div>
 
     </div>

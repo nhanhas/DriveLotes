@@ -3,24 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="251cd3cf-f67e-4300-9629-9e42e1b8d874" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app.js" afterPath="$PROJECT_DIR$/app/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/index.html" afterPath="$PROJECT_DIR$/app/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/home/HomeController.js" afterPath="$PROJECT_DIR$/app/src/layout/home/HomeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/home/home.html" afterPath="$PROJECT_DIR$/app/src/layout/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/home/home.scss" afterPath="$PROJECT_DIR$/app/src/layout/home/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/navbar/navbar.html" afterPath="$PROJECT_DIR$/app/src/shared/navbar/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/navbar/navbar.scss" afterPath="$PROJECT_DIR$/app/src/shared/navbar/navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js" afterPath="$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/treatment/treatment.html" afterPath="$PROJECT_DIR$/app/src/layout/treatment/treatment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/treatment/treatment.scss" afterPath="$PROJECT_DIR$/app/src/layout/treatment/treatment.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.js" afterPath="$PROJECT_DIR$/www/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/home/HomeController.js" afterPath="$PROJECT_DIR$/www/layout/home/HomeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/home/home.css" afterPath="$PROJECT_DIR$/www/layout/home/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/home/home.html" afterPath="$PROJECT_DIR$/www/layout/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/navbar/navbar.css" afterPath="$PROJECT_DIR$/www/shared/navbar/navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/navbar/navbar.html" afterPath="$PROJECT_DIR$/www/shared/navbar/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/treatment/TreatmentController.js" afterPath="$PROJECT_DIR$/www/layout/treatment/TreatmentController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/treatment/treatment.css" afterPath="$PROJECT_DIR$/www/layout/treatment/treatment.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/layout/treatment/treatment.html" afterPath="$PROJECT_DIR$/www/layout/treatment/treatment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/www/shared/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/shared/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/www/shared/toolbar/toolbar.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,13 +27,11 @@
       <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="115" column="18" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="115" selection-end-column="18" />
+            <state relative-caret-position="597">
+              <caret line="149" column="14" lean-forward="true" selection-start-line="142" selection-start-column="8" selection-end-line="149" selection-end-column="14" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,12 +40,13 @@
       <file leaf-file-name="order.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="135" column="3" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="135" selection-end-column="3" />
+            <state relative-caret-position="461">
+              <caret line="216" column="0" lean-forward="false" selection-start-line="216" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
                 <element signature="e#713#850#0" expanded="false" />
                 <element signature="e#864#2189#0" expanded="false" />
                 <element signature="e#2213#2240#0" expanded="false" />
+                <element signature="e#2373#3554#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,11 +55,10 @@
       <file leaf-file-name="treatment.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+            <state relative-caret-position="576">
+              <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
               <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +67,8 @@
       <file leaf-file-name="treatment.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="242" column="18" lean-forward="false" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
+            <state relative-caret-position="627">
+              <caret line="252" column="0" lean-forward="true" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
               <folding>
                 <element signature="e#2488#2625#0" expanded="false" />
                 <element signature="e#2638#3963#0" expanded="false" />
@@ -92,12 +80,12 @@
       <file leaf-file-name="OrderController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="139" lean-forward="false" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="139" />
+            <state relative-caret-position="-166">
+              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
               <folding>
                 <element signature="e#1559#1872#0" expanded="false" />
                 <element signature="e#1876#2189#0" expanded="false" />
-                <element signature="e#2292#5871#0" expanded="false" />
+                <element signature="e#2821#5643#0" expanded="false" />
                 <element signature="e#5957#6178#0" expanded="false" />
                 <element signature="e#6271#7180#0" expanded="false" />
                 <element signature="e#7258#7614#0" expanded="false" />
@@ -119,20 +107,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreatmentController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreatmentController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="89" column="18" lean-forward="false" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+            <state relative-caret-position="504">
+              <caret line="164" column="48" lean-forward="false" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
               <folding>
-                <element signature="e#1218#1836#0" expanded="false" />
-                <element signature="e#2020#2349#0" expanded="false" />
-                <element signature="e#2884#3686#0" expanded="false" />
-                <element signature="e#3780#3857#0" expanded="false" />
-                <element signature="e#3930#4757#0" expanded="false" />
-                <element signature="e#4837#5896#0" expanded="false" />
-                <element signature="e#5943#7537#0" expanded="false" />
+                <element signature="e#1266#2868#0" expanded="false" />
+                <element signature="e#3052#3381#0" expanded="false" />
+                <element signature="e#5808#6610#0" expanded="false" />
+                <element signature="e#6704#6781#0" expanded="false" />
+                <element signature="e#6854#7681#0" expanded="false" />
+                <element signature="e#7761#8820#0" expanded="false" />
+                <element signature="e#8867#10461#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="save_lote_treatment.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/save_lote_treatment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_invoice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,11 +158,10 @@
       <file leaf-file-name="toolbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="164" column="54" lean-forward="false" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+            <state relative-caret-position="519">
+              <caret line="197" column="50" lean-forward="false" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#!!top" expanded="false" />
@@ -197,8 +204,9 @@
       <find>hint</find>
       <find>productsList</find>
       <find>liveIsReady</find>
-      <find>initQuagga</find>
+      <find>$result</find>
       <find>$timeout</find>
+      <find>initQuagga</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/server</dir>
@@ -235,11 +243,13 @@
         <option value="$PROJECT_DIR$/app/src/index.html" />
         <option value="$PROJECT_DIR$/app/src/app.js" />
         <option value="$PROJECT_DIR$/app/src/layout/home/home.html" />
-        <option value="$PROJECT_DIR$/app/src/layout/treatment/treatment.scss" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
+        <option value="$PROJECT_DIR$/server/get_lote_treatment.php" />
+        <option value="$PROJECT_DIR$/app/src/layout/treatment/treatment.scss" />
+        <option value="$PROJECT_DIR$/app/src/layout/treatment/treatment.html" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
         <option value="$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js" />
-        <option value="$PROJECT_DIR$/app/src/layout/treatment/treatment.html" />
+        <option value="$PROJECT_DIR$/server/save_lote_treatment.php" />
       </list>
     </option>
   </component>
@@ -252,7 +262,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1005" />
@@ -403,15 +413,15 @@
       <workItem from="1505245125078" duration="3592000" />
       <workItem from="1506456904127" duration="3709000" />
       <workItem from="1506871017004" duration="3415000" />
-      <workItem from="1507389279945" duration="5513000" />
+      <workItem from="1507389279945" duration="11061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44774000" />
+    <option name="totallyTimeSpent" value="50322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1005" extended-state="0" />
+    <frame x="-1" y="23" width="1920" height="1005" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -449,28 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/get_invoices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="69" lean-forward="true" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="94" column="70" lean-forward="false" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
@@ -731,26 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2715">
-          <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/get_invoices.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/get_refs_by_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,39 +834,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
+    <entry file="file://$PROJECT_DIR$/server/get_refs_by_code.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="135" column="3" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="135" selection-end-column="3" />
-          <folding>
-            <element signature="e#713#850#0" expanded="false" />
-            <element signature="e#864#2189#0" expanded="false" />
-            <element signature="e#2213#2240#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="115" column="18" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="115" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="242" column="18" lean-forward="false" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
-          <folding>
-            <element signature="e#2488#2625#0" expanded="false" />
-            <element signature="e#2638#3963#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="78" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -906,13 +850,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/get_lote_treatment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="252" column="0" lean-forward="true" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+          <folding>
+            <element signature="e#2488#2625#0" expanded="false" />
+            <element signature="e#2638#3963#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="149" column="14" lean-forward="true" selection-start-line="142" selection-start-column="8" selection-end-line="149" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="216" column="0" lean-forward="false" selection-start-line="216" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <element signature="e#713#850#0" expanded="false" />
+            <element signature="e#864#2189#0" expanded="false" />
+            <element signature="e#2213#2240#0" expanded="false" />
+            <element signature="e#2373#3554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="164" column="54" lean-forward="false" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+        <state relative-caret-position="519">
+          <caret line="197" column="50" lean-forward="false" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#0;n#!!top" expanded="false" />
@@ -924,14 +910,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="139" lean-forward="false" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="139" />
+        <state relative-caret-position="-166">
+          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding>
             <element signature="e#1559#1872#0" expanded="false" />
             <element signature="e#1876#2189#0" expanded="false" />
-            <element signature="e#2292#5871#0" expanded="false" />
+            <element signature="e#2821#5643#0" expanded="false" />
             <element signature="e#5957#6178#0" expanded="false" />
             <element signature="e#6271#7180#0" expanded="false" />
             <element signature="e#7258#7614#0" expanded="false" />
@@ -952,30 +956,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.html">
+    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        <state relative-caret-position="504">
+          <caret line="164" column="48" lean-forward="false" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#1266#2868#0" expanded="false" />
+            <element signature="e#3052#3381#0" expanded="false" />
+            <element signature="e#5808#6610#0" expanded="false" />
+            <element signature="e#6704#6781#0" expanded="false" />
+            <element signature="e#6854#7681#0" expanded="false" />
+            <element signature="e#7761#8820#0" expanded="false" />
+            <element signature="e#8867#10461#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/TreatmentController.js">
+    <entry file="file://$PROJECT_DIR$/server/save_lote_treatment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="89" column="18" lean-forward="false" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-          <folding>
-            <element signature="e#1218#1836#0" expanded="false" />
-            <element signature="e#2020#2349#0" expanded="false" />
-            <element signature="e#2884#3686#0" expanded="false" />
-            <element signature="e#3780#3857#0" expanded="false" />
-            <element signature="e#3930#4757#0" expanded="false" />
-            <element signature="e#4837#5896#0" expanded="false" />
-            <element signature="e#5943#7537#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
