@@ -205,6 +205,6 @@ app
                 this.updateFlags();
             }
 
-        }
+        };
 
     }]);
