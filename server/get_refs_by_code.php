@@ -33,7 +33,7 @@ function getLote($ch, $credentials, $codeBar){
     												"filterItems":[{
     																"comparison":0,
     																"filterItem":"u6526_lotes.codebar",
-    																"valueItem":'.$codeBar.',
+    																"valueItem":"'.$codeBar.'",
     																"groupItem":0,
     																"checkNull":false,
     																"skipCheckType":false,

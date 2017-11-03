@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="251cd3cf-f67e-4300-9629-9e42e1b8d874" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" afterPath="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/get_lote_treatment.php" afterPath="$PROJECT_DIR$/server/get_lote_treatment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/get_refs_by_code.php" afterPath="$PROJECT_DIR$/server/get_refs_by_code.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,43 +18,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="43" column="103" lean-forward="false" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="order.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="1440">
               <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
               <folding>
                 <element signature="e#713#850#0" expanded="false" />
                 <element signature="e#864#2189#0" expanded="false" />
                 <element signature="e#2213#2240#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="treatment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,17 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/settings/settings.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="111" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SettingsController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/settings/SettingsController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="564">
@@ -91,15 +54,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="treatment.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/layout/treatment/treatment.scss">
+      <file leaf-file-name="get_refs_by_code.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/get_refs_by_code.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="271" selection-end-column="1" />
-              <folding>
-                <element signature="e#2488#2625#0" expanded="false" />
-                <element signature="e#2638#3963#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-908">
+              <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_lote_treatment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/get_lote_treatment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="48" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="continue_pending.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/continue_pending.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-359">
+              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_invoice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-554">
+              <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="save_lote_treatment.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/save_lote_treatment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +107,7 @@
       <file leaf-file-name="OrderController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="1275">
               <caret line="100" column="57" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="57" />
               <folding>
                 <element signature="e#1593#1906#0" expanded="false" />
@@ -195,7 +195,6 @@
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.scss" />
         <option value="$PROJECT_DIR$/server/create_invoice.php" />
         <option value="$PROJECT_DIR$/server/get_invoices.php" />
-        <option value="$PROJECT_DIR$/server/get_refs_by_code.php" />
         <option value="$PROJECT_DIR$/app/src/shared/navbar/navbar.html" />
         <option value="$PROJECT_DIR$/app/src/shared/navbar/navbar.scss" />
         <option value="$PROJECT_DIR$/app/src/layout/home/home.scss" />
@@ -204,7 +203,6 @@
         <option value="$PROJECT_DIR$/app/src/app.js" />
         <option value="$PROJECT_DIR$/app/src/layout/home/home.html" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js" />
-        <option value="$PROJECT_DIR$/server/get_lote_treatment.php" />
         <option value="$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html" />
         <option value="$PROJECT_DIR$/server/save_lote_treatment.php" />
         <option value="$PROJECT_DIR$/app/src/layout/treatment/treatment.scss" />
@@ -219,6 +217,8 @@
         <option value="$PROJECT_DIR$/app/src/layout/order/OrderController.js" />
         <option value="$PROJECT_DIR$/app/src/layout/order/order.scss" />
         <option value="$PROJECT_DIR$/app/src/layout/settings/SettingsController.js" />
+        <option value="$PROJECT_DIR$/server/get_refs_by_code.php" />
+        <option value="$PROJECT_DIR$/server/get_lote_treatment.php" />
       </list>
     </option>
   </component>
@@ -252,6 +252,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,8 +343,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,12 +391,13 @@
       <workItem from="1506456904127" duration="3709000" />
       <workItem from="1506871017004" duration="3415000" />
       <workItem from="1507389279945" duration="13289000" />
-      <workItem from="1507471243936" duration="2397000" />
+      <workItem from="1507471243936" duration="2520000" />
+      <workItem from="1509749110486" duration="1182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54947000" />
+    <option name="totallyTimeSpent" value="56252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1005" extended-state="0" />
@@ -669,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/continue_pending.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -746,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/get_refs_by_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="78" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -760,31 +747,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/get_lote_treatment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/shared/toolbar/toolbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="197" column="50" lean-forward="false" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/save_lote_treatment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -872,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/order.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="1440">
           <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
           <folding>
             <element signature="e#713#850#0" expanded="false" />
@@ -884,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/layout/order/OrderController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="1275">
           <caret line="100" column="57" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="57" />
           <folding>
             <element signature="e#1593#1906#0" expanded="false" />
@@ -913,6 +879,46 @@
           <folding>
             <element signature="e#1762#2818#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/get_refs_by_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/get_lote_treatment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="48" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/continue_pending.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/create_invoice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-554">
+          <caret line="181" column="43" lean-forward="false" selection-start-line="181" selection-start-column="43" selection-end-line="181" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/save_lote_treatment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
