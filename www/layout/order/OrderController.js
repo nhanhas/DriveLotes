@@ -60,6 +60,7 @@ app
         //after "add new product" and then decoded
         $scope.afterDecode = function (codeResult){
 
+            $scope.errorMsg = "";
             var cachedObject =  localStorage.getItem('credentials');
             if ( cachedObject ){
                 var credentials = JSON.parse(cachedObject);
@@ -129,6 +130,7 @@ app
 
                         }else{
                             $scope.errorMsg = "Lote não encontrado no Drive FX";
+                            $scope.initQuagga();
                         }
 
 
