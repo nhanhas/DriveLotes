@@ -37,12 +37,21 @@
             <!-- client choose-->
             <div class="col-xs-12 text-center client-select">
 
-                <select ng-model="clientSelected" class="client-option">
+                <!-- Stable Version -->
+                <!--<select ng-model="clientSelected" class="client-option">
                     <option ng-repeat="client in clientList" value="{{client.no}}">{{client.nome}}</option>
-                </select>
+                </select>-->
 
-                <!-- <span ng-show="loadingClients"><i class="fa fa fa-spinner fa-spin"></i></span> -->
+                <div class="ui fluid search selection dropdown client-option">
+                    <input type="hidden" ng-model="clientSelected" name="client" id="clientInput">
+                    <i class="dropdown icon"></i>
+                    <div id="clientLabel" class="default text">Cliente</div>
+                    <div class="menu">
+                        <!-- <div class="item" data-value="af"></i>Afghanistan</div> -->
 
+                        <div class="item" style="font-size:12px" data-value="{{client.no}}" ng-repeat="client in clientList"></i>{{client.nome}}</div>
+                    </div>
+                </div>
 
             </div>
 

@@ -7,6 +7,8 @@
   bottom: 80px;
   top: 0;
   overflow: hidden; }
+  .Order .ui.search.dropdown .menu {
+    max-height: 18.014286rem !important; }
   .Order .row {
     margin: 0; }
     .Order .row > div {
@@ -74,7 +76,8 @@
   .Order .order-hint {
     margin-top: 30px; }
   .Order .client-select {
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding: 10px !important; }
     .Order .client-select select {
       color: black;
       width: 200px; }

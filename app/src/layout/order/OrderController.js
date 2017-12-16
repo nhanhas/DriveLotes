@@ -1,6 +1,8 @@
 app
     .controller('OrderController', ['$scope', '$location','$rootScope', '$timeout','$http', function($scope, $location,$rootScope, $timeout, $http) {
 
+
+
         //Views flags
         $scope.step1 = true;//add prod view
         $scope.step2 = false;//loading view
@@ -37,6 +39,8 @@ app
         $scope.clientList.push($scope.client2);*/
 
         $scope.errorMsg = "";
+
+
 
         //check if it is in cache - configured
         var cachedObject =  localStorage.getItem('credentials');
@@ -187,6 +191,7 @@ app
 
         //for toolbar stepChoose
         $scope.onStartingOrder = function(){
+            $scope.clientSelected = $('#clientInput').val();
             //TODO validate if client is choosed
             $scope.step0 = false; //config needed
             $scope.stepChoose = false;//choose client
@@ -221,6 +226,11 @@ app
                         console.log(data);
                         if(data.result.length > 0){
                             $scope.clientList = data.result;
+                            //Start Up Semantic UI dropdown for clients
+                            jQuery(document).ready(function() {
+                                $('.ui.dropdown').dropdown();
+
+                            });
                         }else{
                             //TODO - Message in case of an error
                         }
@@ -282,6 +292,9 @@ app
             $scope.errorMsg = "";
 
             $scope.clientSelected = undefined;
+            $('#clientInput').val("");
+            $('#clientLabel').empty();
+
             $scope.toolbarSelected = 'order';
             $scope.step0 = false; //config needed
             $scope.stepChoose = true;//choose client

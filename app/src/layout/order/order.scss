@@ -12,6 +12,12 @@
 
   overflow: hidden;
 
+  //Semantic UI
+  .ui.search.dropdown .menu {
+    max-height: 18.014286rem !important;
+  }
+
+
   .row {
     margin: 0;
     > div {
@@ -142,6 +148,7 @@
 
   .client-select{
     margin-top:10px;
+    padding: 10px !important;
     select{
       color:black;
        width: 200px;
@@ -258,4 +265,6 @@
     background-color: rgba(1,1,1,0.3);
     border-radius: 24px;
   }
+
+
 }
