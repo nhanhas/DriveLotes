@@ -123,7 +123,7 @@ app
                             $scope.productsList.push(productToAdd);
 
                             //#2 - Store half tabuleiro
-                            if(meioTab){
+                            if(meioTab && meioTab.ref !== ''){
                                 $scope.productsList.push({design : meioTab.design, ref:meioTab.ref, qtt : 0 ,litem: lote.codebar,half : true});
                             }
 
